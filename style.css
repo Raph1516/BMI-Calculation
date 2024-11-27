@@ -1,0 +1,25 @@
+.image{
+    display: flex;
+}
+
+.container{
+    width: 800px;
+    padding: 32px;
+    border-radius: 100px;
+    border: solid black;
+    margin-top: 15%;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 10px 20px 50px black;
+}
+
+.label{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.calculate {
+    background-color: rgb(20, 10, 215);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}

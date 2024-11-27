@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h2> BMI Calculation</h2>
+    <label>Weight:</label>
+    <input id="weight"><br>
+    <label>Height:</label>
+    <input id="height"><br>
+
+    <button class="calculate" onclick="calculate()">Calculate</button>
+    <div id="result"></div>
+
+<script>
+    function calculate(){
+        let weight = parseFloat(document.getElementById('weight').value);
+        let height = parseFloat(document.getElementById('height').value);
+        let height1 = height / 100;
+        let bmi = weight / (height1 * height1)
+
+        document.getElementById('result').innerHTML = bmi.toFixed(2);
+    }
+</script>
+</div>
+</center>
+</body>
+</html>
